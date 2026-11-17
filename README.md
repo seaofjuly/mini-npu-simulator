@@ -35,7 +35,7 @@ py main.py
 ## 파일 구조
 
 ```text
-mini-npu-practice/
+mini-npu-simulator/
 ├── main.py              # 메인 실행 파일
 ├── data.json            # 필터(5×5, 13×13, 25×25)와 패턴, expected가 들어 있는 데이터
 ├── error_data.json      # 오류 처리 시험용 데이터 (일부러 틀린 케이스 포함)
