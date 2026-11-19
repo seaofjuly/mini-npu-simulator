@@ -81,7 +81,8 @@ print(m)
 ```
 
 ![데이터 구조 결과](docs/screenshots/matrix_result.png)
-
+* 아래 캡처에서 앞의 두 줄(`1.0`과 표)이 위 코드의 결과이고, 뒤의 두 줄(`5.0`, `1.0`)은 같은 파일에서 함께 실행한 MAC 연산 확인 결과입니다.
+  
 ### MAC 연산
 
 MAC(Multiply-Accumulate) 연산은 두 배열의 같은 위치 값끼리 곱하고(Multiply),
