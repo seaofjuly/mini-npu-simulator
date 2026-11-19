@@ -20,7 +20,7 @@ py main.py
 | `1` | 사용자 입력 (3×3) | 필터 A, 필터 B, 패턴을 한 줄씩(공백으로 구분) 입력하면 MAC 점수, 연산 시간, 판정(A/B/판정 불가)과 3×3 성능 표를 보여줍니다. |
 | `2` | data.json 분석 | `data.json`의 필터와 패턴을 읽어 케이스별 판정과 PASS/FAIL, 크기별 성능 표, 결과 요약을 보여줍니다. |
 
-모드 1은 아래처럼 입력하면 됩니다. (십자가 필터, X 필터, X 모양 패턴)
+모드 1은 아래 값을 입력해서 확인했습니다. (십자가 필터, X 필터, X 모양 패턴)
 
 ```text
 필터 A: 0 1 0 / 1 1 1 / 0 1 0
@@ -28,7 +28,8 @@ py main.py
 패턴:   1 0 1 / 0 1 0 / 1 0 1
 ```
 
-다음은 모드 1의 실행 결과입니다. 패턴이 X 모양이라서 X 필터(B)의 점수가 더 높게 나옵니다.
+입력한 결과 A 점수는 1.0, B 점수는 5.0이 나왔고 B로 판정되었습니다. 
+패턴이 X 모양이라서 X 필터(B)의 점수가 더 높게 나옵니다.
 
 ![모드 1 실행 결과](docs/screenshots/mode1_run.png)
 
@@ -189,7 +190,7 @@ def judge(score_a, score_b, label_a="A", label_b="B"):
 점수는 `mac()`으로 계산하고 `judge()`로 A/B/판정 불가를 정합니다.
 
 다음은 십자가 필터(A), X 필터(B), X 모양 패턴을 입력한 결과입니다.
-패턴이 X 모양이라서 X 필터(B)의 점수가 더 높게 나옵니다.
+패턴이 X 모양이라서 X 필터(B)의 점수가 더 높게 나왔습니다.
 
 ![모드 1 실행 결과](docs/screenshots/mode1_run.png)
 
@@ -206,7 +207,7 @@ def judge(score_a, score_b, label_a="A", label_b="B"):
 
 ![에러로 멈춘 화면](docs/screenshots/parse_error.png)
 
-`try`/`except`를 적용한 뒤에는 에러 대신 안내 문구가 나옵니다.
+`try`/`except`를 적용한 뒤에는 에러 대신 안내 문구가 나왔습니다.
 
 ![안내 문구가 나오는 화면](docs/screenshots/parse_error_fixed.png)
 
